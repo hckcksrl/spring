@@ -10,6 +10,9 @@ import org.springframework.context.annotation.Configuration;
 import javax.persistence.EntityManager;
 import javax.sql.DataSource;
 
+/**
+ * 자바코드로 직접 빈생성
+ */
 @Configuration
 public class SpringConfig {
 

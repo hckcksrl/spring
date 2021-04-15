@@ -22,6 +22,10 @@ public class HelloController {
         return "hello-template";
     }
 
+    /**
+     * @ResponseBody를 사용하면 뷰 리졸버( viewResolver )를 사용하지 않음
+     * 객체를 반환하면 객체가 JSON으로 변환됨
+  ㄷ  */
     @GetMapping("hello-string")
     @ResponseBody
     public String helloString(@RequestParam("name") String name){

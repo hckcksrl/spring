@@ -15,12 +15,18 @@ class MemberServiceTest {
     MemberService memberService;
     MemoryMemberRepository memberRepository;
 
+    /**
+     * 테스트를 실행하기전에 항상 실행
+     */
     @BeforeEach
     public void beforeEach() {
         memberRepository = new MemoryMemberRepository();
         memberService = new MemberService(memberRepository);
     }
 
+    /**
+     * 테스트를 실행하기하고 항상 실행
+     */
     @AfterEach
     public void afterEach() {
         memberRepository.clearStore();
